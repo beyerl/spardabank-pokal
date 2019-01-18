@@ -1,2 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
+
+.mh-80p{
+    max-height: 80vh;
+}
