@@ -11,6 +11,6 @@
     height: 90vh;
 }
 
-table.borderless td, table.borderless th {
+tr.borderless td, tr.borderless th {
     border-top: none;
 }
