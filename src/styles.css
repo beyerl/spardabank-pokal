@@ -1,6 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
 
-.mh-80p{
-    max-height: 80vh;
+.background-img{
+    background-image: url("./assets/slide1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.fill-screen {
+    height: 90vh;
+}
+
+table.borderless td, table.borderless th {
+    border-top: none;
 }

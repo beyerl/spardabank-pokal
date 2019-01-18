@@ -5,13 +5,17 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { ArticleComponent } from './article/article.component';
+import { ImgComponent } from './img/img.component';
+import { LeadComponent } from './lead/lead.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     CarouselComponent,
-    ArticleComponent
+    ArticleComponent,
+    ImgComponent,
+    LeadComponent
   ],
   imports: [
     BrowserModule
