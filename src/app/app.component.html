@@ -1,41 +1,10 @@
 <!--<app-navbar></app-navbar>-->
 <!--<app-carousel></app-carousel>-->
 <app-img></app-img>
-<main class="container">
+<main id="main" class="container">
     <div class="col-md-8 offset-md-2">
         <app-lead></app-lead>
-        <table class="table">
-            <tbody>
-                <tr>
-                    <th scope="row">Nächster Termin:</th>
-                    <td>19.10.2019</td>
-                </tr>
-                <tr>
-                    <th scope="row">Veranstalter:</th>
-                    <td>1. CKKS Traunreut</td>
-                </tr>
-                <tr>
-                    <th scope="row">Veranstaltungsort</th>
-                    <td>Turnhalle Schnaitsee, Kirchensurerstraße 31, 83530 Schnaitsee</td>
-                </tr>
-                <tr>
-                    <th scope="row">Kategorien</th>
-                    <td></td>
-                </tr>  
-                <tr class="borderless">
-                    <td class="text-right">Kata einzeln:</td>
-                    <td>U6, U8, U10, U14, U16, U18, +18</td>
-                </tr>
-                <tr class="borderless">
-                    <td class="text-right">Kata Team:</td>
-                    <td>U8, U10, U14, U16, U18, +18</td>
-                </tr>
-                <tr class="borderless">
-                    <td class="text-right">Kumite einzeln:</td>
-                    <td>U8, U10, U14, U16, U18, +18</td>                            
-                </tr>
-            </tbody>
-        </table>
+        <app-table></app-table>
         <p>Mindestteilnehmerzahl sind drei Personen pro Gruppe. Sonst werden Kategorien zusammengelegt.</p>
         <div class="row">
             <app-article class="col-6" id="zeitplan" title="Zeitplan">
@@ -43,10 +12,8 @@
             </app-article>
             <app-article class="col-6" id="anmeldung" title="Anmeldung">
                 <div class="row">
-                    <div class="col-lg-5">
-                        <a href="../assets/Meldeformular.xlsx" class="btn btn-primary">Vorlage downloaden</a>
-                    </div>
-                    <p class="col-lg-7">Mit Excel-Liste per Mail an <a href="mailto:info@spardabank-pokal.de">info@spardabank-pokal.de</a></p>
+                    <a href="../assets/Meldeformular.xlsx" class="btn btn-primary">Vorlage downloaden</a>
+                    <p>Mit Excel-Liste per Mail an <a href="mailto:info@spardabank-pokal.de">info@spardabank-pokal.de</a></p>
                 </div>
             </app-article>
         </div>

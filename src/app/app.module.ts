@@ -7,6 +7,7 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { ArticleComponent } from './article/article.component';
 import { ImgComponent } from './img/img.component';
 import { LeadComponent } from './lead/lead.component';
+import { TableComponent } from './table/table.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { LeadComponent } from './lead/lead.component';
     CarouselComponent,
     ArticleComponent,
     ImgComponent,
-    LeadComponent
+    LeadComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule
