@@ -4,7 +4,7 @@ a {
 
 .background-img{
   background-image: url("src/assets/karate1.jpg");
-  background-position: center;
+  background-position: center -140px;
   background-repeat: no-repeat;
 }
 

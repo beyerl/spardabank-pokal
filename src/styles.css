@@ -2,9 +2,9 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
 .fill-screen {
-    height: 90vh;
+    height: 85vh;
 }
 
-tr.borderless td, tr.borderless th {
+.table .borderless {
     border-top: none;
 }

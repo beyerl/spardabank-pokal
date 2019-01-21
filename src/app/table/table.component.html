@@ -1,32 +1,11 @@
 <table class="table">
   <tbody>
-      <tr>
-          <th scope="row">Nächster Termin:</th>
-          <td>19.10.2019</td>
-      </tr>
-      <tr>
-          <th scope="row">Veranstalter:</th>
-          <td>1. CKKS Traunreut</td>
-      </tr>
-      <tr>
-          <th scope="row">Veranstaltungsort</th>
-          <td>Turnhalle Schnaitsee, Kirchensurerstraße 31, 83530 Schnaitsee</td>
-      </tr>
-      <tr>
-          <th scope="row">Kategorien</th>
-          <td></td>
-      </tr>  
-      <tr class="borderless">
-          <td class="text-right">Kata einzeln:</td>
-          <td>U6, U8, U10, U14, U16, U18, +18</td>
-      </tr>
-      <tr class="borderless">
-          <td class="text-right">Kata Team:</td>
-          <td>U8, U10, U14, U16, U18, +18</td>
-      </tr>
-      <tr class="borderless">
-          <td class="text-right">Kumite einzeln:</td>
-          <td>U8, U10, U14, U16, U18, +18</td>                            
-      </tr>
+    <tr *ngFor="let row of rows">
+        <th *ngIf="row.layout == 'th'" scope="row">{{ row.heading }}</th>
+        <td *ngIf="row.layout == 'th'">{{ row.content }}</td>
+        <td *ngIf="row.layout == 'td'" scope="row" class="text-right borderless">{{ row.heading }}</td>
+        <td *ngIf="row.layout == 'td'" class="borderless">{{ row.content }}</td>
+        <td *ngIf="row.layout == 'span'" colspan="2">{{ row.content }}</td>
+    </tr>
   </tbody>
 </table>
