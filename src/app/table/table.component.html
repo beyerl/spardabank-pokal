@@ -1,11 +1,14 @@
-<table class="table">
-  <tbody>
-    <tr *ngFor="let row of rows">
-        <th *ngIf="row.layout == 'th'" scope="row">{{ row.heading }}</th>
-        <td *ngIf="row.layout == 'th'">{{ row.content }}</td>
-        <td *ngIf="row.layout == 'td'" scope="row" class="text-right borderless">{{ row.heading }}</td>
-        <td *ngIf="row.layout == 'td'" class="borderless">{{ row.content }}</td>
-        <td *ngIf="row.layout == 'span'" colspan="2">{{ row.content }}</td>
-    </tr>
-  </tbody>
-</table>
+<div class="row" *ngFor="let row of rows; first as isFirst; last as isLast" 
+  [ngClass]="{
+    'mt-3': !isFirst && row.layout == 'th',
+    'border-top pt-3': row.layout == 'th',
+    'mt-1': row.layout == 'td',
+    'border-bottom pb-3': isLast}">
+
+  <div *ngIf="row.layout == 'th'" class="col-md-3 font-weight-bold">{{ row.heading }}</div>
+  <div *ngIf="row.layout == 'th'" class="col-md-9 text-justify">{{ row.content }}</div>
+
+  <div *ngIf="row.layout == 'td'" class="col-md-3 text-right-resp">{{ row.heading }}</div>
+  <div *ngIf="row.layout == 'td'" class="col-md-9 text-justify">{{ row.content }}<span *ngIf="row.neu" class="font-weight-bold text-info"> (Neu)</span></div>
+
+</div>
