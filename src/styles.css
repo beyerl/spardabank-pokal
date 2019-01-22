@@ -4,3 +4,7 @@
 .fill-screen {
     height: 85vh;
 }
+
+body{
+    font-family: 'Century Gothic', 'Arial'!important;
+}

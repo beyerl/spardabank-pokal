@@ -1,41 +1,45 @@
 <app-navbar></app-navbar>
 <app-img></app-img>
+<app-lead></app-lead>
 <main id="main" class="container">
-    <div class="col-lg-8 offset-lg-2">
-        <app-lead></app-lead>
-        <app-article id="turnier" title="Turnier">
-            <app-table [rows]="turnier"></app-table>
-        </app-article>
-        <app-article id="regeln" title="Regeln">
-            <app-table [rows]="regeln"></app-table>
-        </app-article>
-        <app-article id="anmeldung" title="Anmeldung">
-            <div class="row border-top mb-2 pt-2">
-                <div class="col-md-3">
-                    <a href='./assets/anmeldung-spardabankpokal.xlsx' class='btn btn-primary'>Vorlage downloaden</a>
+    <img src="../assets/logo_ckks_nurbild.jpg" alt="CKKS-Logo" class="mx-auto d-block mt-4 mb-2">
+
+    <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+            <app-article id="turnier" title="Turnier">
+                <app-table [rows]="turnier"></app-table>
+            </app-article>
+            <app-article id="regeln" title="Regeln">
+                <app-table [rows]="regeln"></app-table>
+            </app-article>
+            <app-article id="anmeldung" title="Anmeldung">
+                <div class="row border-top mb-2 pt-2">
+                    <div class="col-md-3">
+                        <a href='./assets/anmeldung-spardabankpokal.xlsx' class='btn btn-primary'>Vorlage downloaden</a>
+                    </div>
+                    <div class="col-md-9">
+                        Mit Excel-Liste per Mail an <a href='mailto:info@spardabank-pokal.de'>info@spardabank-pokal.de</a>
+                    </div>
                 </div>
-                <div class="col-md-9">
-                    Mit Excel-Liste per Mail an <a href='mailto:info@spardabank-pokal.de'>info@spardabank-pokal.de</a>
+                <app-table [rows]="anmeldung"></app-table>
+            </app-article>
+            <app-article id="kontakt" title="Kontakt">
+                <div class="row border-top">
+                    <div class="col-12">
+                        Patrick Schalch<br> 
+                        Tel.: 0171 3440102<br>
+                        <a href='mailto:info@spardabank-pokal.de'>info@spardabank-pokal.de</a>
+                    </div>
                 </div>
-            </div>
-            <app-table [rows]="anmeldung"></app-table>
-        </app-article>
-        <app-article id="kontakt" title="Kontakt">
-            <div class="row border-top">
-                <div class="col-12">
-                    Patrick Schalch<br> 
-                    Tel.: 0171 3440102<br>
-                    <a href='mailto:info@spardabank-pokal.de'>info@spardabank-pokal.de</a>
-                </div>
-            </div>
-        </app-article>
+            </app-article>
+        </div>
     </div>
 </main>
-<footer class="navbar navbar-light bg-light">
+<footer class="navbar navbar-dark bg-dark text-light">
     <div class="container">
-        <app-article id="sonstiges" title="" class="col-lg-8 offset-lg-2 text-justify small">
+        <div id="sonstiges" title="" class="col-lg-8 offset-lg-2 text-justify small">
                 <p><strong>Haftungsausschluss:</strong> Der Veranstalter schließt eine Haftung jeglicher Art aus<br>
                 <strong>Datenschutz:</strong> Mit der Teilnahme an der Veranstaltung geben Teilnehmer, Betreuer und Zuschauer ihr Einverständnis, dass Fotos und Aufnahmen zur Berichterstattung und zu Werbezwecken für das Turnier verwendet werden dürfen</p>
-        </app-article>
+        </div>
     </div>
 </footer>
