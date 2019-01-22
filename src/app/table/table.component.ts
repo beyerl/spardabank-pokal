@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./table.component.css']
 })
 export class TableComponent implements OnInit {
-  @Input('rows') rows = []
+  @Input('rows') rows = [];
 
   constructor() { }
 

@@ -6,7 +6,7 @@
     'border-bottom pb-3': isLast}">
 
   <div *ngIf="row.layout == 'th'" class="col-md-3 font-weight-bold">{{ row.heading }}</div>
-  <div *ngIf="row.layout == 'th'" class="col-md-9 text-justify">{{ row.content }}</div>
+  <div *ngIf="row.layout == 'th'" class="col-md-9 text-justify">{{ row.content }}<span *ngIf="row.neu" class="font-weight-bold text-info"> (Neu)</span></div>
 
   <div *ngIf="row.layout == 'td'" class="col-md-3 text-right-resp">{{ row.heading }}</div>
   <div *ngIf="row.layout == 'td'" class="col-md-9 text-justify">{{ row.content }}<span *ngIf="row.neu" class="font-weight-bold text-info"> (Neu)</span></div>

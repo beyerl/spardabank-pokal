@@ -12,7 +12,6 @@ import { TableComponent } from './table/table.component';
   declarations: [
     AppComponent,
     NavbarComponent,
-    CarouselComponent,
     ArticleComponent,
     ImgComponent,
     LeadComponent,

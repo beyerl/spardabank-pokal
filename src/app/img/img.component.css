@@ -22,3 +22,10 @@ h1 {
     font-size: 2.3em;
   }
 }
+
+@media screen and (max-height: 576px){
+  .background-img {
+    display: none;
+    /*background-position: center -200px;*/
+  }
+}
