@@ -8,3 +8,7 @@
 body{
     font-family: 'Century Gothic', 'Arial'!important;
 }
+
+.bg-black {
+    background-color: #000;
+}

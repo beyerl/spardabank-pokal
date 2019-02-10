@@ -2,17 +2,23 @@
 <app-img></app-img>
 <app-lead></app-lead>
 <main id="main" class="container">
-    <img src="../assets/logo_ckks_nurbild.jpg" alt="CKKS-Logo" class="mx-auto d-block mt-4 mb-2">
-
     <div class="row">
-        <div class="col-lg-8 offset-lg-2">
-            <app-article id="turnier" title="Turnier">
-                <app-table [rows]="turnier"></app-table>
+        <div class="col-lg-2">
+            <img src="./assets/logo_ckks_nurbild.jpg" alt="CKKS-Logo" class="logo-img mx-auto d-block mt-4 mb-2 rounded-circle">
+        </div>
+        <div class="col-lg-8">
+            <a id="turnier" class="nav-offset"></a>
+            <app-article title="Turnier">
+                    <app-table [rows]="turnier"></app-table>
             </app-article>
-            <app-article id="regeln" title="Regeln">
+            
+            <a id="regeln" class="nav-offset"></a>
+            <app-article title="Regeln">
                 <app-table [rows]="regeln"></app-table>
             </app-article>
-            <app-article id="anmeldung" title="Anmeldung">
+            
+            <a id="anmeldung" class="nav-offset"></a>
+            <app-article title="Anmeldung">
                 <div class="row border-top mb-2 pt-2">
                     <div class="col-md-3">
                         <a href='./assets/anmeldung-spardabankpokal.xlsx' class='btn btn-primary'>Vorlage downloaden</a>
@@ -23,7 +29,9 @@
                 </div>
                 <app-table [rows]="anmeldung"></app-table>
             </app-article>
-            <app-article id="kontakt" title="Kontakt">
+            
+            <a id="kontakt" class="nav-offset"></a>
+            <app-article title="Kontakt">
                 <div class="row border-top">
                     <div class="col-12">
                         Patrick Schalch<br> 
@@ -31,11 +39,14 @@
                         <a href='mailto:info@spardabank-pokal.de'>info@spardabank-pokal.de</a>
                     </div>
                 </div>
-            </app-article>
+            </app-article>         
+        </div>
+        <div class="col-lg-2">
+            <img src="./assets/logo_ckks_nurbild.jpg" alt="CKKS-Logo" class="logo-img mx-auto d-block mt-4 mb-2 rounded-circle">
         </div>
     </div>
 </main>
-<footer class="navbar navbar-dark bg-dark text-light">
+<footer class="navbar navbar-dark bg-black text-light">
     <div class="container">
         <div id="sonstiges" title="" class="col-lg-8 offset-lg-2 text-justify small">
                 <p><strong>Haftungsausschluss:</strong> Der Veranstalter schließt eine Haftung jeglicher Art aus<br>
