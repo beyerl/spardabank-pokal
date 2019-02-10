@@ -1,0 +1,50 @@
+<app-img></app-img>
+<app-lead></app-lead>
+<main id="main" class="container">
+    <div class="row">
+        <div class="col-lg-2">
+            <img src="./assets/logo_ckks_nurbild.jpg" alt="CKKS-Logo" class="logo-img mx-auto d-block mt-4 mb-2 rounded-circle">
+        </div>
+        <div class="col-lg-8">
+            <app-article id="turnier" title="Turnier">
+                    <app-table [rows]="turnier"></app-table>
+            </app-article>
+            
+            <app-article id="regeln" title="Regeln">
+                <app-table [rows]="regeln"></app-table>
+            </app-article>
+            
+            <app-article id="anmeldung" title="Anmeldung">
+                <div class="row border-top mb-2 pt-2">
+                    <div class="col-md-3">
+                        <a href='./assets/anmeldung-spardabankpokal.xlsx' class='btn btn-primary'>Vorlage downloaden</a>
+                    </div>
+                    <div class="col-md-9">
+                        Mit Excel-Liste per Mail an <a href='mailto:info@spardabank-pokal.de'>info@spardabank-pokal.de</a>
+                    </div>
+                </div>
+                <app-table [rows]="anmeldung"></app-table>
+            </app-article>
+            
+            <app-article id="kontakt" title="Kontakt">
+                <div class="row border-top">
+                    <div class="col-12">
+                        Patrick Schalch<br> 
+                        Tel.: <a href="tel:+49-0171-3440102">0171 / 3440102</a><br>
+                        E-Mail: <a href='mailto:info@spardabank-pokal.de'>info@spardabank-pokal.de</a>
+                    </div>
+                </div>
+            </app-article>         
+        </div>
+        <div class="col-lg-2">
+            <img src="./assets/logo_ckks_nurbild.jpg" alt="CKKS-Logo" class="logo-img mx-auto d-block mt-4 mb-2 rounded-circle">
+        </div>
+    </div>
+</main>
+<footer class="navbar navbar-dark bg-black text-light">
+    <div class="container">
+        <div id="sonstiges" title="" class="col-lg-8 offset-lg-2 text-justify small">
+          <p>© <a href="https://github.com/beyerl">Lorenz Beyer</a> 2019. Alle Rechte vorbehalten. <a routerLink="datenschutz">Datenschutz | Impressum</a></p>
+        </div>
+    </div>
+</footer>

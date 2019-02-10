@@ -1,53 +1,44 @@
-a {
-  color: rgb(62, 63, 58);
-}
-
 .background-img{
-  display: block;
-  background-image: url("src/assets/Karate_head_768.jpg");
-  background-color: #373a3c;
-  background-position: center -100px;
-  background-repeat: no-repeat;
-  margin-top: 40px;
-}
-
-@media screen and (min-width: 768px){
-  .background-img{
-    background-image: url("src/assets/Karate_head_1200h.jpg");
-    background-position: center -140px;
-  }
-}
-
-@media screen and (min-width: 992px){
-  .background-img{
-    background-image: url("src/assets/Karate_head_1200.jpg");
-    background-position: center;
-  }
-}
-
-@media screen and (min-width: 1200px){
-  .background-img{
-    background-image: url("src/assets/Karate_head_1440.jpg");
-    background-position: center;
-  }
-}
-
-@media screen and (min-width: 1440px){
-  .background-img{
-    background-image: url("src/assets/Karate_head_4k.jpg");
-    background-position: center -140px;
-  }
-}
-
-img {
-  display: none;
-}
-
-@media screen and (min-width: 768px){
-  img {
     display: block;
-    position: absolute;
-    top: 70%;
-    width: 500px;
-  }
+    background-image: url("src/assets/Karate_head_768.jpg");
+    background-color: #373a3c;
+    background-position: center -100px;
+    background-repeat: no-repeat;
+    margin-top: 40px;
 }
+    @media screen and (min-width: 768px){
+        .background-img{
+        background-image: url("src/assets/Karate_head_1200h.jpg");
+        background-position: center -140px;
+        }
+    }
+    @media screen and (min-width: 992px){
+        .background-img{
+        background-image: url("src/assets/Karate_head_1200.jpg");
+        background-position: center;
+        }
+    }
+    @media screen and (min-width: 1200px){
+        .background-img{
+        background-image: url("src/assets/Karate_head_1440.jpg");
+        background-position: center;
+        }
+    }
+    @media screen and (min-width: 1440px){
+        .background-img{
+        background-image: url("src/assets/Karate_head_4k.jpg");
+        background-position: center -140px;
+        }
+    }
+
+.banner-img {
+    display: none;
+    }
+    @media screen and (min-width: 768px){
+        .banner-img {
+        display: block;
+        position: absolute;
+        top: 70%;
+        width: 500px;
+        }
+    }

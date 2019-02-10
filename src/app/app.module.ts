@@ -9,6 +9,8 @@ import { ImgComponent } from './img/img.component';
 import { LeadComponent } from './lead/lead.component';
 import { TableComponent } from './table/table.component';
 import { AppRoutingModule } from './app-routing.module';
+import { MainComponent } from './main/main.component';
+import { DataprotectionComponent } from './dataprotection/dataprotection.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { AppRoutingModule } from './app-routing.module';
     ArticleComponent,
     ImgComponent,
     LeadComponent,
-    TableComponent
+    TableComponent,
+    MainComponent,
+    DataprotectionComponent
   ],
   imports: [
     BrowserModule,
